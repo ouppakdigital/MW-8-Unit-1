@@ -213,6 +213,26 @@
     /* ---------------- Quiz data ---------------- */
     const quizData = [
       {
+        q: "Which operation is represented by the shaded region in a Venn diagram where only the overlapping part of Circle A and Circle B is colored?",
+        image: "u1q3.png",
+        choices: ["A) A U B", "B) A ∩ B", "C) A - B", "D) A'"],
+        correct: 1,
+        explain: "The intersection (A ∩ B) represents elements that are common to both sets, which is the overlapping middle section of the circles."
+      },
+      {
+        q: "Which Venn diagram represents A U (B ∩ C)?",
+        optionImages: ["u1q10a.png", "u1q10b.png", "u1q10c.png", "u1q10d.png"],
+        choices: ["A", "B", "C", "D"],
+        correct: 2,
+        explain: "The overlapping regions of B and C (B∩C) and the whole region of A (A U B∩C) are shaded."
+      },
+      {
+        q: "If a set S = {a, b, c}, how many elements are in its power set P(S)?",
+        choices: ["3", "6", "8", "9"],
+        correct: 2,
+        explain: "The number of elements in a power set is calculated by 2<sup>n</sup>, where n is the number of elements in the original set. Since n=3, 2³ = 8."
+      },
+      {
         q: "Which of the following is the correct set-builder notation for set A = {2, 4, 6, 8, 10}?",
         choices: [
           "{x│x is an odd number and x ≤ 10}",
@@ -222,19 +242,6 @@
         ],
         correct: 1,
         explain: "Tabular form lists elements; set-builder defines the property. 2n where n is 1 through 5 perfectly generates the set {2, 4, 6, 8, 10}."
-      },
-      {
-        q: "If a set S = {a, b, c}, how many elements are in its power set P(S)?",
-        choices: ["3", "6", "8", "9"],
-        correct: 2,
-        explain: "The number of elements in a power set is calculated by 2<sup>n</sup>, where n is the number of elements in the original set. Since n=3, 2³ = 8."
-      },
-      {
-        q: "Which operation is represented by the shaded region in a Venn diagram where only the overlapping part of Circle A and Circle B is colored?",
-        image: "u1q3.png",
-        choices: ["A) A U B", "B) A ∩ B", "C) A - B", "D) A'"],
-        correct: 1,
-        explain: "The intersection (A ∩ B) represents elements that are common to both sets, which is the overlapping middle section of the circles."
       },
       {
         q: "According to the Distributive Law, A U (B ∩ C) is equal to:",
@@ -286,13 +293,6 @@
         choices: ["{1, 2, 3, 4, 6, 8}", "{1, 2}", "{2, 4}", "{1, 2, 6, 8}"],
         correct: 1,
         explain: "Factors of 6 are {1, 2, 3, 6}. Factors of 8 are {1, 2, 4, 8}. The common elements (intersection) are {1, 2}."
-      },
-      {
-        q: "Which Venn diagram represents A U (B ∩ C)?",
-        optionImages: ["u1q10a.png", "u1q10b.png", "u1q10c.png", "u1q10d.png"],
-        choices: ["A", "B", "C", "D"],
-        correct: 2,
-        explain: "The overlapping regions of B and C (B∩C) and the whole region of A (A U B∩C) are shaded."
       }
     ];
 
