@@ -66,6 +66,15 @@
     .qbody{flex:1}
     .qtext{font-size:20px;margin:0 0 12px 0;color:var(--deep);font-weight:900}
     .options{display:flex;flex-direction:column;gap:10px}
+    .options.image-grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .options.image-grid .option {
+      flex: 1;
+      flex-direction: column;
+      min-width: 150px;
+    }
     .option{
       display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:linear-gradient(180deg,#fff,#f7fbff);border:2px solid rgba(0,33,71,0.06);cursor:pointer;
       transition:transform .12s ease, box-shadow .12s ease, background .12s ease, border-color .12s ease;
@@ -375,7 +384,7 @@
               </div>
             ` : ''}
             
-            <div class="options" id="options">
+            <div class="options ${item.optionImages ? 'image-grid' : ''}" id="options">
               ${item.choices.map((choice, i) => `
                 <label class="option">
                   <input type="radio" name="choice" value="${i}">
