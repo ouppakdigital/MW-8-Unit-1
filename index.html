@@ -426,67 +426,60 @@
 
     /* ---------------- Quiz data ---------------- */
     const quizData = [
-      {
-    q: "Which Venn diagram represents A ∪ (B ∩ C)?",
-    optionImages: ["u1q10a.png", "u1q10b.png", "u1q10c.png", "u1q10d.png"],
-    choices: ["A", "B", "C", "D"],
-    correct: 2,
-    explain: "Shade B ∩ C and all of A."
-  },
   {
     q: "Which of the following is the correct set-builder notation for set A = {2, 4, 6, 8, 10}?",
     choices: [
-      "{x | x is an odd number and x ≤ 10}",
-      "{x | x = 2n, n ∈ ℕ and 1 ≤ n ≤ 5}",
-      "{x | x is a multiple of 2}",
-      "{x ∈ ℤ | 2 < x < 10}"
+      "\\(\\{x \\mid x\\text{ is an odd number and } x \\leq 10\\}\\)",
+      "\\(\\{x \\mid x = 2n,\\ n \\in \\mathbb{N}\\text{ and } 1 \\leq n \\leq 5\\}\\)",
+      "\\(\\{x \\mid x\\text{ is a multiple of } 2\\}\\)",
+      "\\(\\{x \\in \\mathbb{Z} \\mid 2 < x < 10\\}\\)"
     ],
     correct: 1,
-    explain: "Tabular form lists elements; set-builder defines the property. 2n where n is 1 through 5 perfectly generates the set {2, 4, 6, 8, 10}."
+    explain: "Tabular form lists elements; set-builder defines the property. \\(2n\\) where \\(n\\) is 1 through 5 perfectly generates the set \\(\\{2, 4, 6, 8, 10\\}\\)."
   },
   {
     q: "If a set S = {a, b, c}, how many elements are in its power set P(S)?",
     choices: ["3", "6", "8", "9"],
     correct: 2,
-    explain: "The number of elements in a power set is calculated by 2ⁿ, where n is the number of elements in the original set. Since n = 3, 2³ = 8."
+    explain: "The number of elements in a power set is calculated by \\(2^n\\), where \\(n\\) is the number of elements in the original set. Since \\(n = 3\\), \\(2^3 = 8\\)."
   },
   {
-    q: "Which operation is represented by the shaded region in a Venn diagram where only the overlapping part of Circle A and Circle B is colored?",
+    q: "Which operation is represented by the shaded region in a Venn diagram",
     image: "u1q3.png",
-    choices: ["A) A ∪ B", "B) A ∩ B", "C) A − B", "D) A′"],
+    choices: ["A) \\(A \\cup B\\)", "B) \\(A \\cap B\\)", "C) \\(A - B\\)", "D) \\(A'\\)"],
     correct: 1,
-    explain: "The intersection (A ∩ B) represents elements that are common to both sets, which is the overlapping middle section of the circles."
+    explain: "The intersection (\\(A \\cap B\\)) represents elements that are common to both sets, which is the overlapping middle section of the circles."
   },
   {
-    q: "According to the Distributive Law, A ∪ (B ∩ C) is equal to:",
+    q: "According to the Distributive Law, \\(A \\cup (B \\cap C)\\) is equal to:",
     choices: [
-      "(A ∪ B) ∩ (A ∪ C)",
-      "(A ∩ B) ∪ (A ∩ C)",
-      "A ∪ B ∪ C",
-      "(A ∪ B) ∩ C"
+      "\\((A \\cup B) \\cap (A \\cup C)\\)",
+      "\\((A \\cap B) \\cup (A \\cap C)\\)",
+      "\\(A \\cup B \\cup C\\)",
+      "\\((A \\cup B) \\cap C\\)"
     ],
     correct: 0,
     explain: "The distributive law states that union distributes over intersection."
   },
   {
-    q: "If U = {1, 2, 3, 4, 5, 6} and A = {2, 4, 6}, what is A′ (the complement of A)?",
-    choices: ["{2, 4, 6}", "{1, 3, 5, 6}", "{1, 3, 5}", "∅"],
+    q: "If \\(U = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(A = \\{2, 4, 6\\}\\), what is \\(A'\\) (the complement of A)?",
+    choices: ["\\(\\{2, 4, 6\\}\\)", "\\(\\{1, 3, 5, 6\\}\\)", "\\(\\{1, 3, 5\\}\\)", "\\(\\emptyset\\)"],
     correct: 2,
     explain: "The complement of a set contains all elements in the universal set U that are not in A."
   },
   {
     q: "Which of the following correctly represents one of De Morgan's Laws?",
     choices: [
-      "(A ∪ B)′ = A′ ∪ B′",
-      "(A ∩ B)′ = A′ ∩ B′",
-      "(A ∪ B)′ = A′ ∩ B′",
-      "A ∪ B = B ∪ A"
+      "\\((A \\cup B)' = A' \\cup B'\\)",
+      "\\((A \\cap B)' = A' \\cap B'\\)",
+      "\\((A \\cup B)' = A' \\cap B'\\)",
+      "\\(A \\cup B = B \\cup A\\)"
     ],
     correct: 2,
     explain: "De Morgan's Law: the complement of a union equals the intersection of complements."
   },
   {
-    q: "Which property is shown by the equation A ∩ B = B ∩ A?",
+    q: "Which property is shown by the equation \\(A \\cap B = B \\cap A\\)?",
     choices: ["Associative Law", "Commutative Law", "Distributive Law", "De Morgan's Law"],
     correct: 1,
     explain: "The Commutative Law states order does not matter."
@@ -495,18 +488,25 @@
     q: "Let A = {1, 2}. Which of the following is the correct Power Set P(A)?",
     choices: [
       "{1, 2, {1, 2}}",
-      "{∅, {1}, {2}, {1, 2}}",
+      "\\(\\emptyset, \\{1\\}, \\{2\\}, \\{1, 2\\}\\)",
       "{{1}, {2}}",
       "{0, 1, 2}"
     ],
     correct: 1,
-    explain: "A power set includes ∅, all subsets, and the set itself."
+    explain: "A power set includes \\(\\emptyset\\), all subsets, and the set itself."
   },
   {
-    q: "If A = {x | x is a factor of 6} and B = {x | x is a factor of 8}, what is A ∩ B?",
+    q: "If \\(A = \\{x \\mid x\\text{ is a factor of } 6\\}\\) and \\(B = \\{x \\mid x\\text{ is a factor of } 8\\}\\), what is \\(A \\cap B\\)?",
     choices: ["{1, 2, 3, 4, 6, 8}", "{1, 2}", "{2, 4}", "{1, 2, 6, 8}"],
     correct: 1,
     explain: "Common factors are {1, 2}."
+  },
+  {
+    q: "Which Venn diagram represents \\(A \\cup (B \\cap C)\\)?",
+    optionImages: ["u1q10a.png", "u1q10b.png", "u1q10c.png", "u1q10d.png"],
+    choices: ["A", "B", "C", "D"],
+    correct: 2,
+    explain: "Shade \\(B \\cap C\\) and all of A."
   }
 ];
     /* ---------------- State ---------------- */
@@ -656,7 +656,7 @@
           answers[index] = Number(input.value);
           if (!locked[index]) {
             nextBtn.disabled = false;
-            nextBtn.textContent = 'Next';
+            nextBtn.textContent = 'Submit';
           }
         });
       });
@@ -668,7 +668,7 @@
         nextBtn.textContent = (index === quizData.length - 1) ? 'Finish' : 'Next';
         nextBtn.disabled = false;
       } else {
-        nextBtn.textContent = 'Next';
+        nextBtn.textContent = 'Submit';
         nextBtn.disabled = (answers[index] === null);
       }
 
@@ -760,7 +760,7 @@
       // Phase 1: show feedback (lock) if not yet locked
       if (!locked[current]) {
         if (answers[current] === null) {
-          alert('Please select an answer before pressing Next.');
+          alert('Please select an answer before pressing Submit.');
           return;
         }
         locked[current] = true;
@@ -859,6 +859,7 @@
         reviewList.classList.toggle('open', reviewOpen);
         reviewToggleBtn.textContent = reviewOpen ? 'Hide Answers' : 'Review Answers';
       });
+      typesetNow();
     }
 
     // Keep progress responsive
